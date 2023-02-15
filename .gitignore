@@ -1,0 +1,7 @@
+node_modules
+/customers/node_module
+/products/node_module
+/shopping/node_module
+.env
+.env.dev
+package-lock.json
