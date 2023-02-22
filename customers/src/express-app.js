@@ -13,8 +13,8 @@ module.exports = async (app) => {
 
     //api
     customer(app);
-    products(app);
-    shopping(app);
+    // products(app);
+    // shopping(app);
 
     // error handling
     app.use(HandleErrors);
