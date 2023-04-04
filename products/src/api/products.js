@@ -124,7 +124,9 @@ module.exports = (app) => {
     app.get('/', async (req,res,next) => {
         //check validation
         try {
-            const { data} = await service.GetProducts();        
+            const { data} = await service.GetProducts();  
+            
+            console.log("product route")
             return res.status(200).json(data);
         } catch (error) {
             next(err)

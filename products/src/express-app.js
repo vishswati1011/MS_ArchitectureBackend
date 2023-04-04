@@ -12,9 +12,9 @@ module.exports = async (app) => {
     app.use(express.static(__dirname + '/public'))
 
     //api
-    customer(app);
+    // customer(app);
     products(app);
-    shopping(app);
+    // shopping(app);
 
     // error handling
     app.use(HandleErrors);

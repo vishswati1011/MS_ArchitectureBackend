@@ -12,8 +12,8 @@ module.exports = async (app) => {
     app.use(express.static(__dirname + '/public'))
 
     //api
-    customer(app);
-    products(app);
+    // customer(app);
+    // products(app);
     shopping(app);
 
     // error handling

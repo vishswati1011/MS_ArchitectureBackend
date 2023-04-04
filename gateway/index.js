@@ -9,7 +9,9 @@ app.use(express.json());
 app.use('/customer',proxy('http://localhost:8001'))
 app.use('/shopping',proxy('http://localhost:8003'))
 app.use('/',proxy('http://localhost:8002'))  //products
-
+// app.use('/',(req,res)=>{
+//     res.json({message:"I am live"})
+// })
 
 
 app.listen(8000,()=> {

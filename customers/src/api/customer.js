@@ -4,6 +4,15 @@ const UserAuth = require("./middlewares/auth");
 module.exports = (app) => {
   const service = new CustomerService();
 
+  app.post("/", async (req, res, next) => {
+    try {
+      // const { email, password, phone } = req.body;
+      // const { data } = await service.SignUp({ email, password, phone });
+      return res.json({message:"customer live"});
+    } catch (err) {
+      next(err);
+    }
+  });
   app.post("/signup", async (req, res, next) => {
     try {
       const { email, password, phone } = req.body;
